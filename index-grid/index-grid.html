@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vitor's Blog – Blog de Música (Grid)</title>
+  <link rel="stylesheet" href="index-grid.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+
+<body id="topo">
+
+  <header>
+    <h1>🎵 Vitor's Blog</h1>
+    <p>o blog mais musical do IFPI</p>
+
+    <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav id="main-nav">
+      <ul>
+        <li><a href="#topo"     class="nav-link ativo">Início</a></li>
+        <li><a href="#ultima"   class="nav-link">Última postagem</a></li>
+        <li><a href="#primeira" class="nav-link">Primeira postagem</a></li>
+        <li><a href="#rodape"   class="nav-link">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- div.grid-corpo substitui o <main> no layout grid
+       ela recebe o display:grid definido no index-grid.css -->
+  <div class="grid-corpo">
+
+    <section id="postagens">
+
+      <article id="ultima" class="card">
+        <figure>
+          <picture>
+            <source media="(max-width: 480px)"
+                    srcset="https://placehold.co/480x180/2d1b69/e879f9?text=The+Weeknd+480"/>
+            <source media="(max-width: 768px)"
+                    srcset="https://placehold.co/768x250/2d1b69/e879f9?text=The+Weeknd+768"/>
+            <img src="https://placehold.co/1000x300/2d1b69/e879f9?text=The+Weeknd"
+                 alt="Capa do álbum Hurry Up Tomorrow de The Weeknd"
+                 class="card-img"/>
+          </picture>
+        </figure>
+        <div class="card-body">
+          <span class="tag">Review</span>
+          <h2>Hurry Up Tomorrow – The Weeknd encerra uma era</h2>
+          <p>O terceiro e último capítulo da trilogia de Abel Tesfaye chega carregado de emoção
+             e produção impecável. Faixas como "São Paulo" mostram um artista em estado de graça,
+             misturando synth-pop oitentista com letras cruas sobre fim de relacionamentos e identidade.</p>
+          <p class="autor">
+            vitors.blog
+            <span class="data-hora">20/03/2026 – 10:00</span>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <figure>
+          <picture>
+            <source media="(max-width: 480px)"
+                    srcset="https://placehold.co/480x180/1a1a2e/818cf8?text=Tame+Impala+480"/>
+            <source media="(max-width: 768px)"
+                    srcset="https://placehold.co/768x250/1a1a2e/818cf8?text=Tame+Impala+768"/>
+            <img src="https://placehold.co/1000x300/1a1a2e/818cf8?text=Tame+Impala"
+                 alt="Tame Impala ao vivo"
+                 class="card-img"/>
+          </picture>
+        </figure>
+        <div class="card-body">
+          <span class="tag tag-news">Notícia</span>
+          <h2>Tame Impala anuncia nova turnê mundial para 2026</h2>
+          <p>Kevin Parker confirmou datas para a América do Sul, incluindo shows no Brasil em
+             outubro. A banda promete revisitar clássicos de "Currents" e apresentar material novo.</p>
+          <p class="autor">
+            vitors.blog
+            <span class="data-hora">15/03/2026 – 14:30</span>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <figure>
+          <picture>
+            <source media="(max-width: 480px)"
+                    srcset="https://placehold.co/480x180/0f172a/34d399?text=Kendrick+480"/>
+            <source media="(max-width: 768px)"
+                    srcset="https://placehold.co/768x250/0f172a/34d399?text=Kendrick+768"/>
+            <img src="https://placehold.co/1000x300/0f172a/34d399?text=Kendrick+Lamar"
+                 alt="Kendrick Lamar GNX"
+                 class="card-img"/>
+          </picture>
+        </figure>
+        <div class="card-body">
+          <span class="tag tag-rap">Rap</span>
+          <h2>GNX – Kendrick Lamar consolida seu reinado</h2>
+          <p>Lançado de surpresa, GNX é o álbum mais pessoal de Kendrick desde "To Pimp a Butterfly".
+             Com produção West Coast e letras afiadas, o disco reafirma sua posição como o maior
+             rapper em atividade.</p>
+          <p class="autor">
+            vitors.blog
+            <span class="data-hora">05/03/2026 – 09:00</span>
+          </p>
+        </div>
+      </article>
+
+      <article id="primeira" class="card">
+        <figure>
+          <picture>
+            <source media="(max-width: 480px)"
+                    srcset="https://placehold.co/480x180/2d1b69/f9a8d4?text=Bem-vindo+480"/>
+            <source media="(max-width: 768px)"
+                    srcset="https://placehold.co/768x250/2d1b69/f9a8d4?text=Bem-vindo+768"/>
+            <img src="https://placehold.co/1000x300/2d1b69/f9a8d4?text=Bem-vindo+ao+Vitors+Blog"
+                 alt="Banner de boas-vindas"
+                 class="card-img"/>
+          </picture>
+        </figure>
+        <div class="card-body">
+          <span class="tag tag-misc">Blog</span>
+          <h2>Bem-vindo ao Vitor's Blog!</h2>
+          <p>Este é o espaço onde falamos sobre músicas, álbuns, shows e tudo que envolve
+             o universo musical. Fique à vontade para explorar as postagens e compartilhar
+             sua opinião nos comentários.</p>
+          <p class="autor">
+            vitors.blog
+            <span class="data-hora">01/03/2026 – 08:00</span>
+          </p>
+        </div>
+      </article>
+
+    </section>
+
+    <div class="sidebar">
+
+      <aside id="links-uteis" class="card aside-box">
+        <h2>🔗 Links Úteis</h2>
+        <ul class="aside-links">
+          <li><a href="http://www.ifpi.edu.br"               target="_blank">IFPI</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/" target="_blank">Mozilla Docs</a></li>
+          <li><a href="http://validator.w3.org/"             target="_blank">Validador HTML</a></li>
+          <li><a href="https://stackoverflow.com/"           target="_blank">Stack Overflow</a></li>
+          <li><a href="https://caniuse.com/"                 target="_blank">Can I use</a></li>
+          <li><a href="https://open.spotify.com"             target="_blank">Spotify</a></li>
+        </ul>
+      </aside>
+
+      <aside class="card aside-box">
+        <h2>🏆 Top Álbuns</h2>
+        <ol class="top-list">
+          <li>
+            <span class="rank">1</span>
+            <div class="rank-info">
+              <strong>Hurry Up Tomorrow</strong>
+              <small>The Weeknd</small>
+            </div>
+          </li>
+          <li>
+            <span class="rank">2</span>
+            <div class="rank-info">
+              <strong>GNX</strong>
+              <small>Kendrick Lamar</small>
+            </div>
+          </li>
+          <li>
+            <span class="rank">3</span>
+            <div class="rank-info">
+              <strong>Short n' Sweet</strong>
+              <small>Sabrina Carpenter</small>
+            </div>
+          </li>
+          <li>
+            <span class="rank">4</span>
+            <div class="rank-info">
+              <strong>The Great Impersonator</strong>
+              <small>Halsey</small>
+            </div>
+          </li>
+          <li>
+            <span class="rank">5</span>
+            <div class="rank-info">
+              <strong>Manning Fireworks</strong>
+              <small>MJ Lenderman</small>
+            </div>
+          </li>
+        </ol>
+      </aside>
+
+    </div>
+
+  </div><!-- /grid-corpo -->
+
+  <footer id="rodape">
+    <div class="footer-grid">
+
+      <div class="footer-col">
+        <h4>🎵 Vitor's Blog</h4>
+        <p><i class="fa fa-location-dot"></i> Teresina, PI – Brasil</p>
+        <p><i class="fa fa-envelope"></i>
+          <a href="mailto:contato@vitorsblog.ifpi.edu.br">contato@vitorsblog.ifpi.edu.br</a>
+        </p>
+        <p>© 2026 Vitor's Blog · Todos os direitos reservados.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul class="footer-links">
+          <li><a href="#topo">Início</a></li>
+          <li><a href="#ultima">Última postagem</a></li>
+          <li><a href="#primeira">Primeira postagem</a></li>
+          <li><a href="#rodape">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Redes Sociais</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>Feito com ❤️ por Vitor · IFPI 2026</p>
+      <a href="#topo" class="back-to-top">↑ Voltar ao topo</a>
+    </div>
+
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const nav       = document.getElementById('main-nav');
+
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('aberto');
+      hamburger.classList.toggle('ativo');
+    });
+
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('aberto');
+        hamburger.classList.remove('ativo');
+      });
+    });
+
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', function () {
+        document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('ativo'));
+        this.classList.add('ativo');
+      });
+    });
+  </script>
+
+</body>
+</html>
