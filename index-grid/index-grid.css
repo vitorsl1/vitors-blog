@@ -1,0 +1,48 @@
+@import url('../style.css');
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "cabecalho"
+    "corpo"
+    "rodape";
+  min-height: 100vh;
+}
+
+header      { grid-area: cabecalho; }
+.grid-corpo { grid-area: corpo; }
+footer      { grid-area: rodape; }
+
+.grid-corpo {
+  max-width: var(--largura-max);
+  width: 90%;
+  margin: var(--esp-xl) auto;
+  display: grid;
+  grid-template-columns: 1fr var(--largura-aside);
+  grid-template-areas: "conteudo aside";
+  gap: var(--esp-xl);
+  align-items: start;
+}
+
+section  { grid-area: conteudo; }
+.sidebar { grid-area: aside; width: 100%; min-width: unset; }
+
+@media (max-width: 900px) {
+  .grid-corpo {
+    grid-template-columns: 1fr;
+    grid-template-areas: "conteudo" "aside";
+    width: 100%;
+    margin: 0;
+  }
+  .sidebar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--esp-lg);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-corpo { padding: var(--esp-md); gap: var(--esp-md); }
+  .sidebar { grid-template-columns: 1fr; }
+}
